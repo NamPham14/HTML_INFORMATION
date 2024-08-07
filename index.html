@@ -1,67 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <img src="imag.jpg" width="300px">
-    <h1>Hello, my name is <span style="color: blue;">Phạm Văn Nam</span></h1>
-    
-     <p>I am in my third year FPT University. I'm planning to countiue my education overseas next year</p>
-    <p>My hobby is:</p>
-    <p>
-        <ul>
-            <li>Playing video games</li>
-            <li>Watching moives</li>
-            <li>Reading books</li>
-        </ul>
-        
-    </p>
-    <p>My favorite is:
-     <blockquote>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="imag.jpg" alt="Avatar" />
+      <h1>Hello, my name is <span style="color: blue">Phạm Văn Nam</span></h1>
+      <p>
+        I am in my third year FPT University. I'm planning to countiue my
+        education overseas next year
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>My hobby is:</p>
+
+      <ul>
+        <li>Playing video games</li>
+        <li>Watching moives</li>
+        <li>Reading books</li>
+      </ul>
+
+      <p>My favorite quote is:</p>
+      <blockquote>
         <p>"The only way to do great work is to love what you do</p>
-     </blockquote>   
-    
-   
-    
-    <p>My favorite movie is:  </p>
-    <audio  controls src="music.mp3" autoplay muted></audio>
-     <p>My favorite movie is:</p>
-     <br>
-     <br>
-     <video controls src="movie.mp4" autoplay muted></video>
-    
-    <p>My contact:</p>
-    <Table width="500px" >
-      <tr bgcolor="lightgrey">
-        <th> Facebook </th>
-        <th>Email</th>
-        <th>Phone</th>
-      </tr>
-      <tr>
-        <td><a href="https://web.facebook.com/hoangtrongnamtb"> Phạm Văn Nam</a></td>
-        <td><a href="https://mail.google.com/mail/u/0/?pli=1#inbox">nampham2662@gmail.com</a></td>
-        <td><a href="callto:0868202662">0868202662</a></td>
-    </tr>
+      </blockquote>
 
+      <p>My favorite song is:</p>
+      <audio controls src="music.mp3" autoplay muted>
+        Your browser does not support the audio element.
+      </audio>
 
+      <p>My favorite movie is:</p>
 
-    </Table>
+      <video controls src="movie.mp4" autoplay muted>
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <form action="">
-        <h2>Do you want something to say to me?</h2>
+    <div class="section">
+      <h2>Contract Information</h2>
+      <table>
+        <tr>
+          <th>Facebook</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://web.facebook.com/hoangtrongnamtb"> Phạm Văn Nam</a>
+          </td>
+          <td>
+            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"
+              >nampham2662@gmail.com</a
+            >
+          </td>
+          <td><a href="callto:0868202662">0868202662</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Programming Languages: Python, Java</li>
+        <li>Database Management: SQL, MongoDB</li>
+        <li>Version Control: Git, GitHub</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Inter-Web Developer </strong>at Tech Company(June 2023 -August
+          2023)
+        </li>
+        <p>
+          Worker on various web development project, focusing on front-end
+          development using modern frameworks
+        </p>
+      </ul>
+      <ul>
+        <li><strong>Freelancer</strong>(January 2022-Present)</li>
+        <p>
+          Developer and maintained websites for various clients, including
+          e-commerce sites and personal portfolios
+        </p>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Bachelor of Computer Science</strong>at FPT
+          University(Expected 2025)
+        </li>
+        <p>Specializing in software engineering and web development</p>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Portfolio Website</strong>
+        </li>
+        <p>
+          A personal Portfolio websites showcasing my project and skills.Built
+          with HTML,CSS,and JavaScript
+        </p>
+      </ul>
+      <ul>
+        <li><strong>Task Manager App</strong></li>
+        <p>
+          A web-based task Management application using Python and Flask for the
+          backend, and React for the frontend
+        </p>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Do you want to say something to me?</h2>
+      <form>
         <div>
-            <label for="question">Question:</label>
-            <input id="question" type="">
-            <button type="submit">Submit</button>
-          
+          <label for="question">Question</label>
+          <input
+            type="text"
+            id="question"
+            name="question"
+            placeholder="Type your question here..."
+          />
+          <button type="submit">Submit</button>
         </div>
-       
-    </form>
-    
-
-
-</body>
+      </form>
+    </div>
+  </body>
 </html>
